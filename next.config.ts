@@ -1,10 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Cloudflare Pages automatically detects Next.js
+  // Cloudflare Pages requires static export
+  output: "export",
+  
   // Images configuration for Cloudflare Pages
   images: {
-    // Images are served from public folder, which works with Cloudflare
+    // For static export, images need to be unoptimized
+    unoptimized: true,
     remotePatterns: [],
   },
   
