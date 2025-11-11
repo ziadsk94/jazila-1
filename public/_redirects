@@ -1,4 +1,4 @@
-# Cloudflare Pages redirects
-# All routes should be handled by Next.js
-/*    /   200
+# Cloudflare Pages redirects for static export
+# Static assets should be served directly, not redirected
+# Only redirect non-asset routes to index.html for client-side routing
 
