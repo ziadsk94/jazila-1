@@ -26,7 +26,7 @@ git push
 3. **Configure Build Settings**
    - **Framework preset**: Next.js (auto-detected)
    - **Build command**: `npm run build`
-   - **Build output directory**: `.next`
+   - **Build output directory**: `out` ⚠️ **IMPORTANT: Use "out" not ".next"**
    - **Root directory**: `/` (leave empty)
    - **Node.js version**: `20` (or latest LTS)
 
@@ -73,10 +73,17 @@ jazila-2/
 
 ## 🔧 Configuration Files
 
-- **next.config.ts**: Optimized for Cloudflare Pages
+- **next.config.ts**: Configured with `output: "export"` for static export to `out` directory
 - **public/_headers**: Security headers for Cloudflare
 - **public/_redirects**: Routing configuration
 - **.gitignore**: Updated with Cloudflare exclusions
+
+### ⚙️ Next.js Configuration
+
+The project uses static export (`output: "export"`) which:
+- Creates an `out` directory with all static files
+- Disables Next.js Image Optimization (uses `unoptimized: true`)
+- Generates fully static HTML files for Cloudflare Pages
 
 ## 🌐 After Deployment
 
