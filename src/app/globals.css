@@ -3,13 +3,30 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Color Palette */
+  --blush-pink: #F1CADD;
+  --dusty-rose: #D8AAB7;
+  --cherry-red: #E87A7A;
+  --soft-gold: #FADDAF;
+  --ivory: #FFF5E1;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
+  /* Font Variables */
+  --font-playfair-display: var(--font-playfair-display);
+  --font-lato: var(--font-lato);
+  --font-cairo: var(--font-cairo);
+  
+  /* Color Palette - Available as Tailwind classes */
+  --color-blush-pink: #F1CADD;
+  --color-dusty-rose: #D8AAB7;
+  --color-cherry-red: #E87A7A;
+  --color-soft-gold: #FADDAF;
+  --color-ivory: #FFF5E1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +36,89 @@
   }
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  /* Prevent font size adjustment on iOS */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  /* Smooth scrolling */
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-lato), sans-serif;
+  /* Better font rendering on mobile */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Prevent horizontal scroll on mobile */
+  overflow-x: hidden;
+  /* Improve touch interactions */
+  touch-action: manipulation;
+}
+
+/* Ensure interactive elements are touch-friendly on mobile */
+@media (max-width: 640px) {
+  button:not([class*="min-h"]):not([class*="h-"]),
+  a[role="button"]:not([class*="min-h"]):not([class*="h-"]),
+  [role="button"]:not([class*="min-h"]):not([class*="h-"]) {
+    min-height: 44px;
+  }
+  
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    min-height: 44px;
+  }
+}
+
+/* Font Utility Classes */
+.font-playfair {
+  font-family: var(--font-playfair-display), serif;
+}
+
+.font-lato {
+  font-family: var(--font-lato), sans-serif;
+}
+
+.font-cairo {
+  font-family: var(--font-cairo), sans-serif;
+}
+
+.font-dancing-script {
+  font-family: var(--font-dancing-script), cursive;
+}
+
+/* Smooth Arrow Animation */
+@keyframes gentle-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.animate-gentle-bounce {
+  animation: gentle-bounce 2s ease-in-out infinite;
+}
+
+/* Fade in animation for hero */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
 }

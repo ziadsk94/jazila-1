@@ -1,0 +1,4 @@
+# Cloudflare Pages redirects
+# All routes should be handled by Next.js
+/*    /   200
+
