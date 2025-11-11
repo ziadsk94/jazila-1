@@ -128,7 +128,7 @@ export default function MemoryLane() {
           {/* Mobile: Stacked layout */}
           <div className="flex flex-col items-center gap-6 sm:hidden">
             <PolaroidPhoto
-              src="/images/2025-04-09 21.50.52.jpg"
+              src="/images/1.jpg"
               alt="The day it all began"
               caption="The day it all began. I was so nervous, and you were so perfect. I had no idea my whole life was about to change right here."
               rotation={-2}
@@ -138,7 +138,7 @@ export default function MemoryLane() {
               isAbsolute={false}
             />
             <PolaroidPhoto
-              src="/images/2025-04-19 21.12.41.jpg"
+              src="/images/2.jpg"
               alt="The day you said yes"
               caption="The day you officially said 'yes' to being mine. I still feel that same butterflies when I think about this moment"
               rotation={1}
@@ -148,7 +148,7 @@ export default function MemoryLane() {
               isAbsolute={false}
             />
             <PolaroidPhoto
-              src="/images/2025-06-08 00.00.03.jpg"
+              src="/images/3.jpg"
               alt="The moment I realized home"
               caption="This was the day. The moment I realized 'home' wasn't a place or a building. It was this. It was you. It's always been you."
               rotation={-1}
@@ -158,7 +158,7 @@ export default function MemoryLane() {
               isAbsolute={false}
             />
             <PolaroidPhoto
-              src="/images/2025-06-08 14.21.40.jpg"
+              src="/images/4.jpg"
               alt="Art gallery memory"
               caption="I tried to pay attention to the art, but I was too busy memorizing the way you looked at them. You were (and are) my favorite view."
               rotation={2}
@@ -167,7 +167,7 @@ export default function MemoryLane() {
               isAbsolute={false}
             />
             <PolaroidPhoto
-              src="/images/2025-06-09 00.51.39.jpg"
+              src="/images/5.jpg"
               alt="Perfect day"
               caption="If I get to choose one day to live on a loop for eternity... it's this one. Perfect."
               rotation={-1}
@@ -177,7 +177,7 @@ export default function MemoryLane() {
               isAbsolute={false}
             />
             <PolaroidPhoto
-              src="/images/2025-07-06 22.40.16.jpg"
+              src="/images/6.jpg"
               alt="Our bubble"
               caption="The whole world just disappeared. No stress, no noise. Just us, in our own little bubble, and absolutely nothing else mattered"
               rotation={1}
@@ -193,7 +193,7 @@ export default function MemoryLane() {
             {/* Photo 1 - Row 1, Col 1 */}
             <div className="flex justify-start">
               <PolaroidPhoto
-                src="/images/2025-04-09 21.50.52.jpg"
+                src="/images/1.jpg"
                 alt="The day it all began"
                 caption="The day it all began. I was so nervous, and you were so perfect. I had no idea my whole life was about to change right here."
                 rotation={-3}
@@ -207,7 +207,7 @@ export default function MemoryLane() {
             {/* Photo 2 - Row 1, Col 2 (staggered down) */}
             <div className="flex justify-end pt-16">
               <PolaroidPhoto
-                src="/images/2025-04-19 21.12.41.jpg"
+                src="/images/2.jpg"
                 alt="The day you said yes"
                 caption="The day you officially said 'yes' to being mine. I still feel that same butterflies when I think about this moment"
                 rotation={2}
@@ -221,7 +221,7 @@ export default function MemoryLane() {
             {/* Photo 3 - Row 2, Col 1 (or Col 3 on lg) */}
             <div className="flex justify-start pt-8 lg:col-start-3 lg:row-start-1 lg:pt-20">
               <PolaroidPhoto
-                src="/images/2025-06-08 00.00.03.jpg"
+                src="/images/3.jpg"
                 alt="The moment I realized home"
                 caption="This was the day. The moment I realized 'home' wasn't a place or a building. It was this. It was you. It's always been you."
                 rotation={-2}
@@ -235,7 +235,7 @@ export default function MemoryLane() {
             {/* Photo 4 - Row 2, Col 2 */}
             <div className="flex justify-end pt-12 lg:col-start-1 lg:row-start-2 lg:pt-8">
               <PolaroidPhoto
-                src="/images/2025-06-08 14.21.40.jpg"
+                src="/images/4.jpg"
                 alt="Art gallery memory"
                 caption="I tried to pay attention to the art, but I was too busy memorizing the way you looked at them. You were (and are) my favorite view."
                 rotation={4}
@@ -248,7 +248,7 @@ export default function MemoryLane() {
             {/* Photo 5 - Row 3, Col 1 */}
             <div className="flex justify-start pt-16">
               <PolaroidPhoto
-                src="/images/2025-06-09 00.51.39.jpg"
+                src="/images/5.jpg"
                 alt="Perfect day"
                 caption="If I get to choose one day to live on a loop for eternity... it's this one. Perfect."
                 rotation={-1}
@@ -262,7 +262,7 @@ export default function MemoryLane() {
             {/* Photo 6 - Row 3, Col 2 (or Col 3 on lg) */}
             <div className="flex justify-end pt-8 lg:col-start-2 lg:row-start-3 lg:pt-12">
               <PolaroidPhoto
-                src="/images/2025-07-06 22.40.16.jpg"
+                src="/images/6.jpg"
                 alt="Our bubble"
                 caption="The whole world just disappeared. No stress, no noise. Just us, in our own little bubble, and absolutely nothing else mattered"
                 rotation={3}
